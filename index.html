@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+
+  <title>Haven Concierge | Premier Airbnb Care</title>
+
+
+
+  <!-- Tipografía premium desde Google Fonts -->
+
+
+
+
+  <!-- Link al CSS -->
+
+  <link rel="stylesheet" href="style.css" />
+
+
+
+</head>
+
+<body>
+  
+
+
+  <!-- Hero Section -->
+
+  <section class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+      <h1>Experience Gold Coast’s Premier Airbnb Care</h1>
+
+      <p>Effortless hosting, flawless stays — your trusted concierge partner.</p>
+
+      <a href="#services" class="btn-primary">Discover Our Services</a>
+
+    </div>
+
+  </section>
+  <!-- Separador curvo -->
+<div class="section-divider"></div>
+
+  <section class="about-solutions">
+  <div class="container two-columns">
+    <div class="col-text">
+      <div class="section-label"><i class="ph ph-diamond"></i> Tailored Service</div>
+      <h2>We make your Airbnb shine</h2>
+      <p>
+        From linen perfection to spotless bathrooms and curated amenities — we turn every stay into a 5-star experience. Whether it's a beachside studio or a luxury penthouse, we tailor our service to your property and guests.
+      </p>
+    </div>
+    <div class="image-content">
+      <img src="https://ik.imagekit.io/xhqs2b9fnt/cleaning%20service-pana.svg?updatedAt=1751268819377" alt="Professional Cleaning Illustration" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- Este div es el separador visual entre secciones -->
+<div class="section-divider"></div>
+
+<section class="services" id="services">
+  <div class="container">
+    <h2>Our Services</h2>
+    <p class="subtitle">Tailored solutions for every type of host — and every kind of stay.</p>
+
+    <div class="service-cards">
+
+      <!-- Turnover Clean -->
+      <div class="service-card">
+        <div class="badge">✔ Essential</div>
+        <h3>Turnover Clean</h3>
+        <p class="price">From $99</p>
+        <p class="desc">
+          Our essential clean between guests. Includes linen swap, surface disinfection, restocking essentials, and a full property reset — fast, efficient, and reliable.
+        </p>
+      </div>
+
+      <!-- 5-Star Experience -->
+      <div class="service-card">
+        <div class="badge">⭐ Most Popular</div>
+        <h3>5-Star Experience</h3>
+        <p class="price">From $149</p>
+        <p class="desc">
+          Premium cleaning with soft-touch finishes, fresh aromas, styled linen, and visual harmony. Our most booked package — a guest favorite that consistently delivers glowing reviews.
+        </p>
+      </div>
+
+      <!-- The Concierge -->
+      <div class="service-card">
+        <div class="badge">🖤 Top Rated</div>
+        <h3>The Concierge</h3>
+        <p class="price">From $199</p>
+        <p class="desc">White-glove service tailored to perfection. Same-day turnovers, bespoke welcome kits, curated floral touches, luxury hotel amenities, and dedicated on-call support for an unmatched guest experience.</p>
+      </div>
+
+    </div>
+
+    <!-- Call to action -->
+    <div class="services-cta">
+      <p>Not sure which plan fits your property?</p>
+      <a href="#contact" class="btn-secondary">Let’s Tailor Your Service</a>
+    </div>
+  </div>
+
+  <section id="quick-quote" class="quick-quote reveal">
+  <div class="container">
+    <h2 class="section-title">Get a Quick Quote</h2>
+    <form id="quote-form">
+  <label for="property-type">Property Type:</label>
+  <select id="property-type" required>
+    <option value="">Select</option>
+    <option value="studio">Studio</option>
+    <option value="apartment">Apartment</option>
+    <option value="house">House</option>
+  </select>
+
+  <label for="bedrooms">Number of Bedrooms:</label>
+  <input type="number" id="bedrooms" min="1" max="10" required />
+  <label for="bathrooms">Number of Bathrooms:</label>
+  <input type="number" id="bathrooms" min="1" max="10" required />
+
+
+  <label for="service-plan">Service Plan:</label>
+  <select id="service-plan" required>
+    <option value="turnover">Turnover Clean</option>
+    <option value="5star">5-Star Experience</option>
+    <option value="concierge">The Concierge</option>
+  </select>
+
+  <button type="submit" class="btn-primary">Get Estimate</button>
+</form>
+    <p id="quote-result" aria-live="polite" style="margin-top:20px; font-weight:700;"></p>
+  </div>
+</section>
+
+</section><!-- Pricing Plans Comparison -->
+<section class="pricing-comparison reveal" id="plans">
+  <div class="container">
+    <h2 class="section-title">Compare Our Plans</h2>
+    <div class="comparison-table">
+      <div class="table-row table-header">
+        <div class="feature">Included In</div>
+        <div class="plan plan-basic">
+          <h3>Turnover Clean</h3>
+          <p class="price">$99+</p>
+        </div>
+        <div class="plan plan-popular">
+          <div class="badge">⭐ Most Popular</div>
+          <h3>5-Star Experience</h3>
+          <p class="price">$149+</p>
+        </div>
+        <div class="plan plan-premium">
+          <div class="badge">🖤 Top Rated</div>
+          <h3>The Concierge</h3>
+          <p class="price">$199+</p>
+        </div>
+      </div>
+
+      <!-- Features -->
+      <div class="table-row"><div class="feature">Linen change</div><div>✔️</div><div>✔️</div><div>✔️</div></div>
+      <div class="table-row"><div class="feature">Surface disinfection</div><div>✔️</div><div>✔️</div><div>✔️</div></div>
+      <div class="table-row"><div class="feature">Amenities restock</div><div>❌</div><div>✔️</div><div>✔️</div></div>
+      <div class="table-row"><div class="feature">Linen styling</div><div>❌</div><div>✔️</div><div>✔️</div></div>
+      <div class="table-row"><div class="feature">Guest-ready aroma</div><div>❌</div><div>✔️</div><div>✔️</div></div>
+      <div class="table-row"><div class="feature">Curated welcome pack</div><div>❌</div><div>❌</div><div>✔️</div></div>
+      <div class="table-row"><div class="feature">Floral details</div><div>❌</div><div>❌</div><div>✔️</div></div>
+      <div class="table-row"><div class="feature">On-call guest support</div><div>❌</div><div>❌</div><div>✔️</div></div>
+
+      <!-- CTA buttons -->
+      <div class="table-row cta-row">
+        <div class="feature"></div>
+        <div><a href="#contact" class="btn-secondary">Choose Turnover</a></div>
+        <div><a href="#contact" class="btn-primary">Book 5-Star</a></div>
+        <div><a href="#contact" class="btn-secondary">Go Premium</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="testimonials reveal">
+  <div class="container">
+    <h2 class="section-title">What Our Clients Say</h2>
+    <div class="testimonial-cards">
+
+      <div class="testimonial-card">
+        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Jessica M." />
+        <p>"Haven Concierge transformed my Airbnb experience. Guests rave about the attention to detail!"</p>
+        <h4>Jessica M.</h4>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="https://randomuser.me/api/portraits/men/43.jpg" alt="Michael B." />
+        <p>"Professional, reliable and always going above and beyond. Highly recommend."</p>
+        <h4>Michael B.</h4>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="https://randomuser.me/api/portraits/women/29.jpg" alt="Sophie L." />
+        <p>"The personal touch and attention to detail set them apart. My bookings increased!"</p>
+        <h4>Sophie L.</h4>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section id="faq-guarantees" class="faq-guarantees-section">
+  <div class="container">
+    <h2 class="section-title">Frequently Asked Questions & Guarantees</h2>
+
+    <!-- FAQ Accordion -->
+    <div class="faq-accordion">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How soon can I expect the cleaning service after booking?
+          <span class="arrow"></span>
+        </button>
+        <div class="faq-answer" hidden>
+          We aim to start the service within 24 hours after confirmation to ensure prompt attention.
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What if I’m not satisfied with the cleaning?
+          <span class="arrow"></span>
+        </button>
+        <div class="faq-answer" hidden>
+          We offer a 100% satisfaction guarantee. If something is missed, we will fix it promptly at no extra cost.
+        </div>
+      </div>
+      <!-- Agrega más preguntas acá -->
+    </div>
+
+    <!-- Guarantees and Why Choose Us -->
+    <div class="guarantees-why">
+      <div class="guarantees">
+        <h3>Our Guarantees</h3>
+        <ul>
+          <li><strong>Reliable & On Time:</strong> We respect your time and arrive when promised.</li>
+          <li><strong>Quality Assurance:</strong> Every job is inspected to meet high standards.</li>
+          <li><strong>Trusted Professionals:</strong> Carefully selected and trained staff.</li>
+          <li><strong>Eco-Friendly Products:</strong> Safe for your family and pets.</li>
+        </ul>
+      </div>
+      <div class="why-choose">
+        <h3>Why Choose Us?</h3>
+        <ul>
+          <li>Customized cleaning plans to fit your needs and budget.</li>
+          <li>Responsive customer support 7 days a week.</li>
+          <li>Premium service with a boutique touch.</li>
+          <li>Flexible scheduling and easy online booking.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Aquí irán las otras secciones -->
+
+<a href="#contact" class="cta-sticky" aria-label="Request a free quote">
+  <!-- Icono flecha o teléfono (puedes usar SVG inline o font icon) -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.2.48 2.5.74 3.83.74a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 20.91 3.09 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.33.25 2.63.74 3.83a1 1 0 01-.21 1.11l-2.41 2.41z" />
+  </svg>
+  Request a Free Quote
+</a>
+<section id="contact" class="contact-section reveal">
+  <div class="container">
+    <h2 class="section-title">Get in Touch</h2>
+    <p>Have questions or want a custom quote? Reach out to us!</p>
+    <form id="contact-form" novalidate>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required placeholder="Your full name" />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="you@example.com" />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Optional" />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required placeholder="Write your message here..." rows="5"></textarea>
+
+      <button type="submit" class="btn-primary">Send Message</button>
+
+      <p id="contact-feedback" aria-live="polite" style="margin-top:15px; font-weight:600;"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-container">
+    <div class="footer-info">
+      <h3>Haven Concierge</h3>
+      <p>Premier Airbnb Care in Gold Coast</p>
+      <p>Email: <a href="mailto:contact@havenconcierge.com.au">contact@havenconcierge.com.au</a></p>
+      <p>Phone: <a href="tel:+61712345678">(07) 1234 5678</a></p>
+    </div>
+    <div class="footer-social">
+      <a href="https://www.facebook.com/havenconcierge" target="_blank" aria-label="Facebook" rel="noopener noreferrer">
+        <phosphor-icon name="facebook-logo" weight="fill" style="font-size: 1.8rem; color: var(--accent-color);"></phosphor-icon>
+      </a>
+      <a href="https://www.instagram.com/havenconcierge" target="_blank" aria-label="Instagram" rel="noopener noreferrer">
+        <phosphor-icon name="instagram-logo" weight="fill" style="font-size: 1.8rem; color: var(--accent-color);"></phosphor-icon>
+      </a>
+      <a href="https://www.linkedin.com/company/havenconcierge" target="_blank" aria-label="LinkedIn" rel="noopener noreferrer">
+        <phosphor-icon name="linkedin-logo" weight="fill" style="font-size: 1.8rem; color: var(--accent-color);"></phosphor-icon>
+      </a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Haven Concierge. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
